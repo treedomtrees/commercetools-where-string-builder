@@ -1,4 +1,4 @@
-# commercetools-where-builder
+# @treedom/commercetools-where-string-builder
 
 A simple programmatic builder for CommerceTools `where` [Query Predicates](https://docs.commercetools.com/api/predicates/query)
 
@@ -7,7 +7,7 @@ Performs stringification and quote escaping for string, boolean and numerical va
 ## Usage
 
 ```typescript
-import { Field, Equals, And } from "commercetools-where-builder";
+import { Field, Equals, And } from "@treedom/commercetools-where-string-builder";
 
 Field(
   "masterData",

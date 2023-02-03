@@ -1,7 +1,17 @@
 {
-  "name": "commercetools-where-builder",
-  "author": "Edoardo Viviani <edoardo.viviani@gmail.com>",
-  "version": "1.0.0",
+  "name": "@treedom/commercetools-where-string-builder",
+  "description": "CommerceTools where string builder",
+  "author": "Edoardo Viviani <e.viviani@treedom.net>",
+  "homepage": "https://github.com/treedomtrees/commercetools-where-string-builder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treedomtrees/commercetools-where-string-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/treedomtrees/commercetools-where-string-builder/issues"
+  },
+  "private": false,
+  "version": "1.0.2",
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {

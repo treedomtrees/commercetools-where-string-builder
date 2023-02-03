@@ -17,11 +17,11 @@ import {
   NotEquals,
   Or,
   WithinCircle,
-} from "./commerceToolsWhereBuilder";
+} from "./commerceToolsWhereStringBuilder";
 
-export * from "./commerceToolsWhereBuilder";
+export * from "./commerceToolsWhereStringBuilder";
 
-export const CommerceToolsWhereBuilder = {
+export const CommerceToolsWhereStringBuilder = {
   Field,
   And,
   Or,
@@ -42,4 +42,4 @@ export const CommerceToolsWhereBuilder = {
   WithinCircle,
 };
 
-export default CommerceToolsWhereBuilder;
+export default CommerceToolsWhereStringBuilder;
