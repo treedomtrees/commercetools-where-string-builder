@@ -9,14 +9,14 @@ import {
   GreaterOrEqualThan,
   GreaterThan,
   HasChanged,
-  HasNotChanged,
+  HasNotChanged, In,
   IsDefined,
   IsNotDefined,
   LessOrEqualThan,
   LessThan,
-  NotEquals,
+  NotEquals, NotIn,
   Or,
-  WithinCircle,
+  WithinCircle
 } from "./commerceToolsWhereStringBuilder";
 
 export * from "./commerceToolsWhereStringBuilder";
@@ -35,6 +35,8 @@ export const CommerceToolsWhereStringBuilder = {
   Contains,
   ContainsAny,
   ContainsAll,
+  In,
+  NotIn,
   IsDefined,
   IsNotDefined,
   HasChanged,

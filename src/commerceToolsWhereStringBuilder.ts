@@ -155,6 +155,36 @@ export const ContainsAny = (
 ) => Contains(field, "any", values);
 
 /**
+ * Builds an IN logical operator
+ * Escapes strings with quotes and stringifies booleans
+ * @param field
+ * @param values
+ * @constructor
+ */
+export const In = (
+  field: string,
+  values: Array<number | boolean | string>
+) =>
+  safeString`${field} in (${values
+    .map(stringifyValue)
+    .join(", ")})`;
+
+/**
+ * Builds an IN logical operator
+ * Escapes strings with quotes and stringifies booleans
+ * @param field
+ * @param values
+ * @constructor
+ */
+export const NotIn = (
+  field: string,
+  values: Array<number | boolean | string>
+) =>
+  safeString`${field} not in (${values
+    .map(stringifyValue)
+    .join(", ")})`;
+
+/**
  * Builds an IS DEFINED logical operator
  * @param field
  * @constructor

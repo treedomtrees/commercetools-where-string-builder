@@ -9,14 +9,14 @@ import {
   GreaterOrEqualThan,
   GreaterThan,
   HasChanged,
-  HasNotChanged,
+  HasNotChanged, In,
   IsDefined,
   IsNotDefined,
   LessOrEqualThan,
   LessThan,
-  NotEquals,
+  NotEquals, NotIn,
   Or,
-  WithinCircle,
+  WithinCircle
 } from "../src";
 
 tap.test("test Field", async (t) => {
@@ -118,6 +118,20 @@ tap.test("test ContainsAll", async (t) => {
   t.same(
     ContainsAll("foo", ["foo", 123, true]),
     'foo contains all ("foo", 123, true)'
+  );
+});
+
+tap.test("test In", async (t) => {
+  t.same(
+    In("foo", ["foo", 123, true]),
+    'foo in ("foo", 123, true)'
+  );
+});
+
+tap.test("test NotIn", async (t) => {
+  t.same(
+    NotIn("foo", ["foo", 123, true]),
+    'foo not in ("foo", 123, true)'
   );
 });
 
