@@ -112,6 +112,18 @@ ContainsAll("bar", ["str", 123, true]); // bar contains all ("str", 123, true)
 ContainsAny("bar", ["str", 123, true]); // bar contains any ("str", 123, true)
 ```
 
+### In: (field: string, values: Array<number | boolean | string>) => string
+
+```typescript
+In("bar", ["str", 123, true]); // bar in ("str", 123, true)
+```
+
+### NotIn: (field: string, values: Array<number | boolean | string>) => string
+
+```typescript
+NotIn("bar", ["str", 123, true]); // bar not in ("str", 123, true)
+```
+
 ### IsDefined: (field: string) => string
 
 ```typescript
