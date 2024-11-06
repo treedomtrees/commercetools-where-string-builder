@@ -217,14 +217,14 @@ export const HasNotChanged = (field: string) =>
 /**
  * Builds a WITHIN CIRCLE logical operator
  * @param field
- * @param latitude
  * @param longitude
+ * @param latitude
  * @param radius
  * @constructor
  */
 export const WithinCircle = (
   field: string,
-  latitude: number,
   longitude: number,
+  latitude: number,
   radius: number
-) => safeString`${field} within circle(${latitude}, ${longitude}, ${radius})`;
+) => safeString`${field} within circle(${longitude}, ${latitude}, ${radius})`;
